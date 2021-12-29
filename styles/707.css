@@ -1,0 +1,541 @@
+/*styles*/
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior:smooth;
+}
+.box{
+	background-color:black;
+	position: absolute;
+	right:0;
+	height:100%;
+	width:100%;
+	min-height:100vh;
+	padding:50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index:2;
+	background:black;
+	color:white;
+	transition: 0.7s;
+}
+.box.active {
+	right:300px;
+}
+.box header{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	padding:50px;
+	z-index:1000;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+h1{
+	font-size:50px;
+	color:white;
+	letter-spacing:1px;
+	font-weight:normal;
+	font-family:'aldrich', verdana, serif;
+	text-shadow:0px 0px 3px #fafdef;
+}
+.toggle{
+	position: relative;
+	width:55px;
+	height:55px;
+	background:url('https://i.ibb.co/H2zNdZw/burgor.png');
+	background-repeat: no-repeat;
+	background-size: 55px;
+	background-position: center;
+	cursor:pointer;
+	animation: fadeb linear 300ms;
+}
+	@keyframes fadeb{
+	0%{opacity:0;}
+	100%{opacity:1;}
+
+}
+.toggle.active {
+	background:url('https://i.ibb.co/RyXZfBm/close.png');
+	background-repeat: no-repeat;
+	background-size: 40px;
+	background-position: center;
+	animation: fadex linear 300ms;
+}
+@keyframes fadex{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+.box video{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	opacity: 0.80;
+}
+.overlay{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0, 0, 0, 0.5);
+	mix-blend-mode: overlay;
+}
+.text{
+	position:relative;
+	z-index:10;
+}
+
+.text h2{
+	letter-spacing:1px;
+	font-size:50px;
+	font-weight: bold;
+	line-height:35px;
+	font-family:'Orbitron', verdana, serif;
+	text-transform: uppercase;
+}
+.text h3{
+	letter-spacing:1px;
+	font-size:50px;
+	font-weight: bold;
+	font-family:'Orbitron', verdana, serif;
+	text-transform: uppercase;
+	line-height:35px;
+}
+.text p{
+	font-size: 20px;
+	font-weight: lighter;
+	font-family:'Orbitron', verdana, serif;
+	line-height:25px;
+	letter-spacing:2px;
+}
+.text a{
+	display: inline-block;
+	font-size:15px;
+	font-family:'orbitron', verdana;
+	font-weight: bold;
+	padding:15px;
+	background:white;
+	margin-top:50px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	color:black;
+}
+.text a:hover{
+	box-shadow:0px 0px 5px white;
+}
+/*menu section*/
+.menu{
+	position: fixed;
+	top:0;
+	right:0;
+	width:300px;
+	height:100%;
+	background-color:black;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:space-between;
+	text-align:center;
+}
+.menu::before{
+	content:"";
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	filter: blur(0.5px);
+	opacity:0.3;
+	width:300px;
+	height:100%;
+	background-image:url('https://i.ibb.co/pfKbKm6/fog.jpg');
+	background-position:center;
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+.list{
+	position:sticky;
+	width:300px;
+	height:100%;
+	padding:155px 5px 15px 5px;
+}
+.box-1{
+	position:relative;
+	bottom:35px;
+}
+
+.box-2{
+	position: relative;
+	top:15px;
+}
+.icon{
+	position: relative;
+	width:200px;
+	height:200px;
+	border-radius:100px;
+	opacity:0.85;
+}
+h4{
+	position: relative;
+	bottom: 110px;
+	text-shadow: 0px 0px 3px #000000;
+	color:white;
+	text-transform: uppercase;
+	font-family: 'Orbitron',verdana;
+	font-size:25px;
+	letter-spacing:1px;
+	z-index:3;
+}
+
+h5{
+	position: relative;
+	color:white;
+	font-family:'Orbitron',verdana;
+	text-transform: uppercase;
+	font-size:15px;
+	letter-spacing:2px;
+	z-index:3;
+}
+.socials{
+	position: relative;
+	bottom:35px;
+	height:160px;
+	text-align: center;
+	padding-left:60px;
+}
+.bord{
+	border:0.5px solid #ffffff;
+	width:175px;
+	margin-bottom:15px;
+}
+
+.border{
+	border:0.5px solid #ffffff;
+	width:175px;
+}
+.disc{
+	color:#ffffff;
+	font-size:15px;
+	padding:10px 0px;
+	font-family:'orbitron', verdana, serif;
+	animation: fadein ease 1s;
+	text-shadow:0px 0px 3px #ffffff;
+}
+@keyframes fadein{
+	100%{opacity:1;}
+	0%{opacity:0;}
+}
+.disc:hover{
+	font-size:0;
+	animation: fadeout ease 1s;
+}
+@keyframes fadeout{
+	100%{opacity:1;}
+	0%{opacity:0;}
+}
+.disc:hover:after{
+	content:attr(data-hover);
+	font-size:15px;
+	color:#ffffff;
+	font-family:'orbitron', verdana, serif;
+	text-shadow: 0px 0px 3px #ffffff;
+	animation:fadein ease 1s;
+}
+@keyframes fadein{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+.gram{
+	color:#ffffff;
+	font-size:15px;
+	padding:10px 0px;
+	font-family:'orbitron', verdana, serif;
+	text-shadow:0px 0px 3px #ffffff;
+	animation: fadein ease 1s;
+}
+@keyframes fadein{
+	100%{opacity:1;}
+	0%{opacity:0;}
+}
+
+.gram:hover{
+	font-size:0;
+	animation: fadeout ease 1s;
+}
+@keyframes fadeout{
+	100%{opacity:1;}
+	0%{opacity:0;}
+}
+
+.gram:hover::after{
+	content:attr(data-hover);
+	color:#ffffff;
+	font-size:15px;
+	font-family:'orbitron', verdana, serif;
+	text-shadow:0px 0px 3px #ffffff;
+	animation:fadein ease 1s;
+}
+@keyframes fadein{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+
+.git{
+	color:#ffffff;
+	font-size:15px;
+	padding:10px 0px;
+	font-family:'orbitron', verdana, serif;
+	text-shadow:0px 0px 3px #ffffff;
+	animation: fadein ease 1s;
+}
+@keyframes fadein{
+	100%{opacity:1;}
+	0%{opacity:0;}
+}
+.git:hover{
+	font-size:0;
+	animation: fadeout ease 1s;
+}
+@keyframes fadeout{
+	100%{opacity:1;}
+	0%{opacity:0;}
+}
+.git:hover::after{
+	content:attr(data-hover);
+	color:#ffffff;
+	font-size:15px;
+	font-family:'orbitron', verdana, serif;
+	text-shadow:0px 0px 3px #ffffff;
+	animation:fadein ease 1s;
+}
+@keyframes fadein{
+	0%{opacity:0;}
+	100%{opacity:1;}
+}
+
+.title{
+	position:relative;
+	top:20px;
+}
+h6{
+	position: relative;
+	color:white;
+	opacity:0.10;
+	font-family:'aldrich',verdana;
+	text-transform: uppercase;
+	font-size:7px;
+	letter-spacing:1px;
+	z-index:3;
+}
+/*media querey*/
+
+/* iphone x*/
+@media screen and (min-width: 375px) {
+.box{
+	padding:15px;
+}
+.box header{
+	padding:15px;
+}
+h1{
+	font-size:45px;
+}
+.text{
+	padding-right:35px;
+}
+.text h2{
+	font-size:35px;
+}
+.text h3{
+	font-size:35px;
+}
+.text p{
+	margin-top:10px;
+	font-size:15px;
+}
+.text a{
+	margin-top: 25px;
+}
+.box-1{
+	bottom:5px;
+}
+.list .socials{
+	top:0px;
+}
+
+.list .title{
+	top:25px;
+	bottom:0px;
+}
+}
+@media screen and (min-width: 412px) {
+.box.active{
+	right:335px;
+}
+.menu{
+	width:335px;
+}
+.menu::before{
+	width:335px;
+}
+.text p{
+	padding-right:35px;
+}
+.list .box-1{
+	bottom:0px;
+	top:35px;
+}
+.list .socials{
+	bottom:0;
+	top:35px;
+}
+.list .title{
+	top:55px;
+
+}
+
+}
+@media screen and (min-width:414px){
+.text p{
+	padding-right:50px;
+}
+.list .box-1{
+	top:0px;
+	bottom:50px;
+}
+.list .socials{
+	top:5px;
+}
+
+}
+
+/*iphone landscapes*/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 677px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+	.list{
+	padding-top:0px;
+  }
+}
+  @media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+.list{
+	padding-top:0px;
+}
+  }
+/*ipad & mini*/
+@media screen and (min-device-width: 768px) {
+.box{
+	padding:25px;
+}
+.box header{
+	padding:25px;
+}
+
+header h1{
+	font-size:45px;
+}
+
+.text h2{
+	font-size:45px;
+	line-height:70px;
+}
+.text h3{
+	font-size:45px;
+	line-height:35px;
+}
+.text p{
+	font-size:20px;
+	padding-right:55px;
+	line-height:35px;
+}
+.list .box-1{
+	top:125px;
+}
+.list .socials{
+	top:125px;
+}
+
+.list .title{
+	top:145px;
+}
+
+}
+
+/*ipad & mini landscape*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+.list .box-1{
+	top:0px;
+}
+.list .socials{
+	top:0px;
+	bottom:0px
+}
+.list .title{
+	top:15px;
+}
+
+}
+
+/*ipad pro 12.9 portrait & landscape -avoided desktops-*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+h1{
+	font-size: 50px;
+}
+h2{
+	font-size:50px;
+	line-height:75px;
+}
+h3{
+	font-size:50px;
+	line-height:75px;
+}
+.text p{
+	font-size:25px;
+}
+.list{
+	padding-top:300px;
+}
+}
+/*laptop etc*/
+@media screen and (min-device-width: 1366px){
+.list{
+	padding-top:110px;
+	}
+.list .box-1{
+	top:0px;
+}
+.list .socials{
+	top:0px;
+}
+.list .title{
+	top:25px;
+}
+
+} 
