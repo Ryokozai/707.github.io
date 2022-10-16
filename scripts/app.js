@@ -379,7 +379,7 @@ menuToggle.addEventListener('click', () => {
     });
     $(document).ready(function(){
         $(window).scroll(function(){
-            if ($(this).scrollTop() > 3240){
+            if ($(this).scrollTop() > 3225){
             $(".sig").css({"opacity" : "1", "letter-spacing" : "10px", "transition" : "3s ease", "transition-delay" : "500ms"})
             }
             else {
