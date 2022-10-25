@@ -1107,8 +1107,8 @@ body{
 	.out2 .out3{
 		width:195px;
 		height:195px;
-		top:-2em;
 	}
+	/*text issue ^ above */
 	.out4 .out5{
 		font-size:0.75em;
 		top:23em;
