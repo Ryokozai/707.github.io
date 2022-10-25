@@ -34,10 +34,6 @@ body{
 .storage-1{
 	width:100%;
 	height:100%;
-	background-image:url('https://i.ibb.co/R4MHNFJ/SFBG.jpg');
-	background-size:cover;
-	background-position:center;
-	background-repeat:no-repeat;
 	min-height:100vh;
 	display:flex;
 	flex-direction: column;
@@ -384,22 +380,7 @@ body{
 	}
 
 	/*RYO CONTENT*/
-	.unit2::-webkit-scrollbar{
-		display:none;
-		scrollbar-width:none;
-	}
-	.unit2{
-		background-color:#000000;
-		height:100%;
-		width:100%;
-		background-image:url('https://i.ibb.co/R4MHNFJ/SFBG.jpg');
-		background-size:cover;
-		background-position:center;
-		background-repeat:no-repeat;
-		background-attachment: fixed;
-		overflow-y:scroll;
-	}
-	.unit2 .content{
+	.unit .content{
 		width:100%;
 		height:100%;
 		display:flex;
@@ -1199,7 +1180,7 @@ body{
 		padding:0 3.5em;
 	}
 	.outro p{
-		font-size:0.8em;
+		font-size:1em;
 	}
 	.outro h6{
 		font-size:0.7em;
@@ -2481,7 +2462,6 @@ body{
 			top:22em;
 		}
 		/*ignored content above*/
-
 		.box .pfp{
 			width:250px;
 			height:250px;
