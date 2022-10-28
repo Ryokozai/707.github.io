@@ -23,7 +23,7 @@ body{
 .unit-1{
     background-color:#000000;
     height:100%;
-    width:100%;
+    width:100%;	
 	background-image:url('https://i.ibb.co/R4MHNFJ/SFBG.jpg');
 	background-size:cover;
 	background-position:center;
@@ -239,22 +239,22 @@ body{
 }
 
 /*UNDETECTED PAGE*/
-	.unit-2{
-		background-color:#000000;
-		height:100%;
-		width:100%;
-		background-image:url('https://i.ibb.co/R4MHNFJ/SFBG.jpg');
-		background-size:cover;
-		background-position:center;
-		background-repeat:no-repeat;
-		background-attachment: fixed;
-		overflow-y: scroll;
-	}
-	.unit-2::-webkit-scrollbar{
-		display:none;	
-		scrollbar-width:none;
-	}
-	.page-2{
+.unit-2::-webkit-scrollbar{
+	display:none;	
+	scrollbar-width:none;
+}
+.unit-2{
+    background-color:#000000;
+    height:100%;
+    width:100%;	
+	background-image:url('https://i.ibb.co/R4MHNFJ/SFBG.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	overflow-y:scroll;
+}
+	.storage-2{
 		width:100%;
 		height:100%;
 		display:flex;
@@ -401,7 +401,7 @@ body{
 		flex-direction: column;
 		justify-content:center;
 		align-items: center;
-		background-color:rgba(0, 0, 0, 0.20);
+		background-color:rgba(0, 0, 0, 0.50);
 		animation-name:appear;
 		animation-duration:1s;
 		animation-delay:1.5s;
@@ -790,7 +790,7 @@ body{
 
 /*media querey*/
 @media (orientation:portrait) and (min-width:315px) {
-	.unit-1{
+	.unit-2{
 		background-attachment: scroll;
 	}
 	.icon07{
@@ -920,9 +920,6 @@ body{
 	/*ignored content above*/
 
 	/*UNDETECTED MOB-1*/
-	.unit-2{
-		background-attachment: scroll;
-	}
 	.box .pfp{
 		width:150px;
 		height:150px;
@@ -1679,7 +1676,7 @@ body{
 /*LANDSCAPE*/
 
 @media (orientation:landscape) and (min-width:480px){
-	.unit-1{
+	.unit-2{
 		background-attachment: scroll;
 	}
 	.icon07{
@@ -1768,9 +1765,6 @@ body{
 		top:12.5em;
 	}
 	/*ignored-1*/
-	.unit-2{
-		background-attachment: scroll;
-	}
 	.out1{
 		opacity:0;
 		animation-name:mobout1;
@@ -2319,6 +2313,9 @@ body{
 	}
 }
 @media (orientation:landscape) and (min-width:1200px){
+	.unit-2{
+		background-attachment: fixed;
+	}
 	/*intro*/
 	.icon07{
 		width:240px;
