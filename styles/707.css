@@ -790,9 +790,6 @@ body{
 
 /*media querey*/
 @media (orientation:portrait) and (min-width:315px) {
-	.unit-2{
-		background-attachment: scroll;
-	}
 	.icon07{
 		width:150px;
 		height:150px;
@@ -1676,9 +1673,6 @@ body{
 /*LANDSCAPE*/
 
 @media (orientation:landscape) and (min-width:480px){
-	.unit-2{
-		background-attachment: scroll;
-	}
 	.icon07{
 		width:140px;
 		height:140px;
@@ -2313,9 +2307,6 @@ body{
 	}
 }
 @media (orientation:landscape) and (min-width:1200px){
-	.unit-2{
-		background-attachment: fixed;
-	}
 	/*intro*/
 	.icon07{
 		width:240px;
