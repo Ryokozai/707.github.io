@@ -793,6 +793,7 @@ body{
 	.icon07{
 		width:150px;
 		height:150px;
+		top:0.30em;
 	}
 	.unit-1 .storage-1{
 		padding:0;
@@ -874,7 +875,7 @@ body{
 	.abox .explore{
 		animation-delay:5s;
 		font-size:0.25;
-		top:23.5em;
+		top:20em;
 	}
 	/*ignored mob-1*/
 	.out1{
@@ -1013,13 +1014,14 @@ body{
 	.icon07{
 		width:175px;
 		height:175px;
+		top:0.35em;
 	}
 	.storage-1 h1{
 		font-size:1.55em;
 	}
 	.abox .explore{
 		font-size:0.68em;
-		top:23em;
+		top:20em;
 	}
 /*ignored mob-2*/
 	.out2 .out3{
@@ -1116,7 +1118,7 @@ body{
 	}
 	.abox .explore{
 		font-size:0.75em;
-		top:23em;
+		top:20em;
 	}
 	/*ignore mob-3*/
 	.out2 .out3{
