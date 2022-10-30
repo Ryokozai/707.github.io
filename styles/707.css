@@ -1016,6 +1016,12 @@ body{
 		height:175px;
 		top:0.35em;
 	}
+	/*android current font is 3.5em on moz but small on rest*/ 
+	@supports (-ms-ime-align:auto) {
+		.storage-1 h1 {
+			font-size:5em;
+		}
+		}
 	.storage-1 h1{
 		font-size:3.5em;
 	}
