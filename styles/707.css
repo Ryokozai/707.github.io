@@ -1118,6 +1118,8 @@ body{
 	.icon07{
 		width:195px;
 		height:195px;
+		max-width:195px;
+		max-height:195px;
 		top:0.50em;
 	}
 	.storage-1 h1{
