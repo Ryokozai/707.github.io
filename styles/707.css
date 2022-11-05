@@ -23,13 +23,11 @@ body{
 .unit-1{
     background-color:#000000;
     height:100%;
-    width:100%;	
+    width:100%;
 	background-image:url('https://i.ibb.co/R4MHNFJ/SFBG.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
-	background-attachment: fixed;
-	overflow-y:scroll;
 }
 .storage-1{
 	width:100%;
@@ -37,14 +35,12 @@ body{
 	min-height:100vh;
 	display:flex;
 	flex-direction: column;
-	align-items:center;
 	justify-content: center;
 }
 .storage-1 h1{
-	text-indent:1em;
+	text-indent:1.25em;
 	text-align:center;
 	align-self: center;
-	position: absolute;
 	color:#ffffff;
 	font-size:2.7em;
 	font-family:'orbitron',verdana,sans-serif;
@@ -160,21 +156,22 @@ body{
 	align-items: center;
 }
 .out1{
-	text-indent:1em;
+	text-indent:1.25em;
 	text-align:center;
 	color:#ffffff;
 	font-size:2.7em;
 	font-family:'orbitron',verdana,sans-serif;
 	position:absolute;
 	justify-self:center;
-	word-spacing:5em;
+	align-self:center;
+	word-spacing:3.10em!important;
 	letter-spacing:0.6em;
 	cursor: default;
 }
 .out2{
 	width:100%;
 	height:100%;
-	display: flex;
+	display:flex;
 	justify-content:center;
 	position:absolute;
 	cursor:default;
@@ -215,7 +212,7 @@ body{
 
 .out1, .out2, .out3{
 	animation-name:vanish;
-	animation-duration:1s;
+	animation-duration:1.5s!important;
 	animation-timing-function:ease;
 	animation-delay:0.8s;
 	animation-fill-mode:forwards;
@@ -251,8 +248,8 @@ body{
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
-	background-attachment: fixed;
 	overflow-y:scroll;
+	background-attachment:fixed;
 }
 	.storage-2{
 		width:100%;
@@ -275,7 +272,9 @@ body{
 		animation-delay:1.5s;
 		animation-timing-function:ease;
 		animation-fill-mode:forwards;
+		align-items:center;
 		opacity:0%;
+		justify-content:center;
 	}
 	@keyframes appear {
 		from{
@@ -308,7 +307,7 @@ body{
 	}
 	.box h1{
 		position: relative;
-		top:25px;
+		margin-top:1em;
 		animation-name:textin;
 		animation-duration:1s;
 		animation-delay:2.2s;
@@ -326,7 +325,6 @@ body{
 	}
 	.box h2{
 		position: relative;
-		top:30px;
 		width:100%;
 		text-align: center;
 		word-spacing:1px;
@@ -799,8 +797,12 @@ body{
 		padding:0;
 	}
 	.storage-1 h1{
-		font-size:1.3em;
+		font-size:1.5em;
 		word-spacing:0em;
+		display:flex;
+		flex-wrap: wrap;
+		justify-content:center;
+		align-items:center;
 	}
 	@keyframes textin {
 		from{
@@ -850,11 +852,11 @@ body{
 		}
 		50%{
 			opacity:1;
-			left:0.5em;
+			left:0em;
 		}
 		100%{
 			opacity:0;
-			left:0.5em;
+			left:0em;
 		}
 	}
 	.storage-1 .cubic{
@@ -891,6 +893,7 @@ body{
 		}
 	}
 	.out2 .out3{
+		top:0.30em;
 		width:150px;
 		height:150px;
 		animation-name:jet;
@@ -900,7 +903,7 @@ body{
 	}
 	@keyframes jet {
 		from{
-			top:-0.8em;
+			top:0.30em;
 			opacity:1;
 		}
 		to{
@@ -911,13 +914,16 @@ body{
 	.out4{
 		animation-delay:0.1s;
 	}
-	.out5{
+	.out4 .out5{
 		font-size:0.25;
-		top:23.5em;
+		top:20em;
 	}
 	/*ignored content above*/
 
 	/*UNDETECTED MOB-1*/
+	.unit-2{
+		background-attachment:scroll;
+	}
 	.box .pfp{
 		width:150px;
 		height:150px;
@@ -1014,16 +1020,9 @@ body{
 	.icon07{
 		width:175px;
 		height:175px;
-		top:0.35em;
 	}
-	/*android current font is 3.5em on moz but small on rest*/ 
-	@supports (-ms-ime-align:auto) {
-		.storage-1 h1 {
-			font-size:5em;
-		}
-		}
 	.storage-1 h1{
-		font-size:3.5em;
+		font-size:1.8em;
 	}
 	.abox .explore{
 		font-size:0.68em;
@@ -1036,7 +1035,7 @@ body{
 	}
 	.out4 .out5{
 		font-size:0.68em;
-		top:23em;
+		top:20em;
 	}
 	/*UNDETECTED MOB-2*/
 	.box .pfp{
@@ -1113,21 +1112,20 @@ body{
 	}
 
 }
-@media (orientation:portrait) and (min-width:400px) {
+@media (orientation:portrait) and (min-width:400px) {         
 	/*intro*/
 	.icon07{
 		width:195px;
 		height:195px;
 		max-width:195px;
 		max-height:195px;
-		top:0.50em;
 	}
 	.storage-1 h1{
-		font-size:1.75em;
+		font-size:2em;
 	}
 	.abox .explore{
 		font-size:0.75em;
-		top:15em;
+		top:20em;
 	}
 	/*ignore mob-3*/
 	.out2 .out3{
@@ -1137,7 +1135,7 @@ body{
 	/*text issue ^ above */
 	.out4 .out5{
 		font-size:0.75em;
-		top:23em;
+		top:20em;
 	}
 		/*UNDETECTED MOB-2*/
 	.box .pfp{
@@ -1220,11 +1218,14 @@ body{
 }
 @media (orientation:portrait) and (min-width:600px) {
 	.icon07{
-		width:225px;
-		height:225px;
+		width:215px;
+		height:215px;
+	   	top:-0.5em;
 	}
 	.storage-1 h1{
-		font-size:1.8em;
+		margin-top:0;
+		font-size:1.9em;
+		text-indent:0;
 	}
 	.onez{
 		position: relative;
@@ -1241,7 +1242,7 @@ body{
 		opacity:0;
 	}
 	100%{
-		left:-2em;
+		left:-1.5em;
 		opacity:1;
 	}
 	}
@@ -1257,11 +1258,11 @@ body{
 	@keyframes righty {
 		0%{
 			opacity:0;
-			right:-2.7em;
+			right:-3em;
 		}
 		100%{
-			opacity:1;
-			right:-2em;
+			opacity:1.5;
+			right:-1.5em;
 		}
 	}
 	.abox .explore{
@@ -1271,8 +1272,8 @@ body{
 	/*ipad ignored content*/
 	.ignored .out1{
 		opacity:1;
-		font-size:1.8em;
-		word-spacing:4em;
+		font-size:1.9em;
+		word-spacing:3.35em!important;
 		animation-name:vanishing;
 		animation-duration:1s;
 		animation-timing-function:ease;
@@ -1282,17 +1283,27 @@ body{
 	@keyframes vanishing{
 		from{
 			opacity:1;
-			word-spacing:4em;
+			word-spacing:3.5em;
 		}
 		to{
 			opacity:0;
-			word-spacing:5.5em;
+			word-spacing:5em;
 		}
-		
 	}
 	.out2 .out3{
-		width:225px;
-		height:225px;
+		width:215px;
+		height:215px;
+		top:-0.5em;
+	}
+	@keyframes jet {
+		from{
+			top:-0.5em;
+			opacity:1;
+		}
+		to{
+			top:-3.5em;
+			opacity:0;
+		}
 	}
 	.out4 .out5{
 		font-size:1em;
@@ -1545,7 +1556,7 @@ body{
 		max-width:450px;
 		max-height:450px;
 	}
-	.cubic .gem{
+	.cubed .gem{
 		width:85px;
 		height:85px;
 	}
@@ -2124,17 +2135,17 @@ body{
 	.ignored .out1{
 		opacity:1;
 		font-size:2em;
-		word-spacing:4em;
+		word-spacing:3.10em!important;
 		animation-name:vanishing;
 	}
 	@keyframes vanishing{
 		from{
 			opacity:1;
-			word-spacing:4em;
+			word-spacing:3.10em;
 		}
 		to{
 			opacity:0;
-			word-spacing:5em;
+			word-spacing:4em;
 		}
 	}
 	.out2 .out3{
@@ -2462,6 +2473,11 @@ body{
 			font-size:1.1em;
 		}
 	/*mob-footer DESKTOP*/
+}
+@media (orientation:landscape) and (min-width:1350px){
+.unit-2{
+	background-attachment:fixed;
+}
 }
 @media (orientation:landscape) and (min-width:1900px){
 		/*lost page ipad LS*/
