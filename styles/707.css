@@ -241,14 +241,14 @@ body{
 	scrollbar-width:none;
 }
 .unit-2{
-    background-color:#000000;
-    height:100%;
-    width:100%;	
+	width:100%;
+	min-height:100%;
+	overflow-y:scroll;
+	background-color: #000000;
 	background-image:url('https://i.ibb.co/R4MHNFJ/SFBG.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
-	overflow-y:scroll;
 	background-attachment:fixed;
 }
 	.storage-2{
@@ -921,9 +921,6 @@ body{
 	/*ignored content above*/
 
 	/*UNDETECTED MOB-1*/
-	.unit-2{
-		background-attachment:scroll;
-	}
 	.box .pfp{
 		width:150px;
 		height:150px;
@@ -2475,9 +2472,7 @@ body{
 	/*mob-footer DESKTOP*/
 }
 @media (orientation:landscape) and (min-width:1350px){
-.unit-2{
-	background-attachment:fixed;
-}
+	/*fixing mobile screening*/ 
 }
 @media (orientation:landscape) and (min-width:1900px){
 		/*lost page ipad LS*/
