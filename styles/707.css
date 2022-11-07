@@ -239,17 +239,43 @@ body{
 .unit-2::-webkit-scrollbar{
 	display:none;	
 	scrollbar-width:none;
+	scroll-behavior: smooth;
 }
 .unit-2{
 	width:100%;
 	min-height:100%;
 	overflow-y:scroll;
-	background-color: #000000;
+	scroll-behavior: smooth;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.display{
+	position:sticky;
+	width:100vw;
+	height:100vh;
 	background-image:url('https://i.ibb.co/R4MHNFJ/SFBG.jpg');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
-	background-attachment:fixed;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.screen::-webkit-scrollbar{
+	display:none;	
+	scrollbar-width:none;
+	scroll-behavior: smooth;
+}
+.screen{
+	position:absolute;
+	width:100%;
+	height:100%;
+	min-height:100%;
+	overflow-y:scroll;
+	scroll-behavior:smooth;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
 }
 	.storage-2{
 		width:100%;
