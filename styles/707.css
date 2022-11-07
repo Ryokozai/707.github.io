@@ -257,7 +257,6 @@ body{
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
-	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 .screen::-webkit-scrollbar{
