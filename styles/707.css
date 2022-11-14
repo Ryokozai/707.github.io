@@ -757,7 +757,7 @@ body{
 	opacity:0;
 }
 .outro .sig{
-	margin-top:15px;
+	margin:0!important;
 	text-transform: uppercase;
 	font-size:1em;
 	font-family:'aldrich', verdana, sans-serif;
@@ -768,7 +768,7 @@ body{
 }
 .outro .social{
 	transition:2s ease;
-	margin:1em 0 0.5em;	
+	margin:1em 0 0;	
 	opacity:0;
 }
 
@@ -778,13 +778,7 @@ body{
 .social .net-1, .net-2, .net-3{
 	width:40px;
 	height:40px;
-	filter:invert(100%);
-}
-
-.net-1:hover, .net-2:hover, .net-3:hover{
-	transform:scale(1);
 	filter:drop-shadow(0px 0px 5px #000000) invert(100%);
-	transition:1s ease;
 }
 
 /*LANDSCAPE & PORTRAIT DEVICES*/
@@ -1002,9 +996,9 @@ body{
 	.outro p{
 		font-size:0.6em;
 	}
-	.outro h6{
+	.outro .sig{
 		font-size:0.4em;
-		margin:0;
+		margin: 0!important;
 	}
 	.social .net-1, .net-2, .net-3{
 		width:20px;
@@ -1103,7 +1097,7 @@ body{
 	.outro p{
 		font-size:0.7em;
 	}
-	.outro h6{
+	.outro .sig{
 		font-size:0.5em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -1207,8 +1201,8 @@ body{
 	.outro p{
 		font-size:1em;
 	}
-	.outro h6{
-		font-size:0.7em;
+	.outro .sig{
+		font-size:0.5em;
 	}
 	.social .net-1, .net-2, .net-3{
 		width:25px;
@@ -1383,7 +1377,7 @@ body{
 	.outro p{
 		font-size:1.4em;
 	}
-	.outro h6{
+	.outro .sig{
 		font-size:1.2em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -1470,7 +1464,7 @@ body{
 	.outro p{
 		font-size:1.5em;
 	}
-	.outro h6{
+	.outro .sig{
 		font-size:1.3em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -1570,7 +1564,7 @@ body{
 	.outro p{
 		font-size:1.6em;
 	}
-	.outro h6{
+	.outro .sig{
 		font-size:1.4em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -1683,7 +1677,7 @@ body{
 	.outro p{
 		font-size:2.2em;
 	}
-	.outro h6{
+	.outro .sig{
 		font-size:2em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -1893,7 +1887,7 @@ body{
 	.outro p{
 		font-size:0.8em;
 	}
-	.outro h6{
+	.outro .sig{
 		font-size:0.6em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -1982,7 +1976,7 @@ body{
 	.outro p{
 		font-size:0.9em;
 	}
-	.outro h6{
+	.outro .sig{
 		font-size:0.7em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -2231,7 +2225,7 @@ body{
 .outro p{
 	font-size:1.6em;
 }
-.outro h6{
+.outro .sig{
 	font-size:1.3em;
 }
 .social .net-1, .net-2, .net-3{
@@ -2320,7 +2314,7 @@ body{
 	.outro p{
 		font-size:1.8em;
 	}
-	.outro h6{
+	.outro .sig{
 		font-size:1.5em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -2411,7 +2405,7 @@ body{
 	.outro p{
 		font-size:1.6em;
 	}
-	.outro h6{
+	.outro .sig{
 		font-size:1.4em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -2566,7 +2560,7 @@ body{
 		.outro p{
 			font-size:2.5em;
 		}
-		.outro h6{
+		.outro .sig{
 			font-size:2.2em;
 		}
 		.social .net-1, .net-2, .net-3{
