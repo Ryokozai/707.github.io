@@ -887,7 +887,7 @@ body{
 	}
 	.out2 .out3{
 		/*top:0.30em;*/
-		top:0;
+		top:-2em;
 		width:150px;
 		height:150px;
 		animation-name:jet;
@@ -1293,7 +1293,7 @@ body{
 		width:215px;
 		height:215px;
 		/*top:-0.5em;*/
-		top:0;
+		top:-3em;
 	}
 	@keyframes jet {
 		from{
