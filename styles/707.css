@@ -784,7 +784,7 @@ body{
 	.icon07{
 		width:150px;
 		height:150px;
-		top:0.30em;
+		top:3em;
 	}
 	.unit-1 .storage-1{
 		padding:0;
@@ -1016,6 +1016,8 @@ body{
 		font-size:1.8em;
 		-moz-font-size:1.8em;
 		-webkit-font-size:1.8em;
+		position: relative;
+		top:-3em;
 	}
 	.abox .explore{
 		font-size:0.68em;
@@ -1119,6 +1121,7 @@ body{
 		font-size:2em;
 		-moz-font-size:2em;
 		-webkit-font-size:2em;
+		top:-3em;
 	}
 	.abox .explore{
 		font-size:0.75em;
@@ -1293,7 +1296,7 @@ body{
 		width:215px;
 		height:215px;
 		/*top:-0.5em;*/
-		top:-3em;
+		top:-2em;
 	}
 	@keyframes jet {
 		from{
