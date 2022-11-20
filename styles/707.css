@@ -1,4 +1,3 @@
-/*css tester welcome*/
 /*styles*/
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
@@ -9,19 +8,11 @@
 	text-decoration: none;
 	list-style: none;
 	scroll-behavior:smooth;
-	-webkit-text-size-adjust: none;
-   	-moz-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    text-size-adjust: none;
 }
 body{
 	background-color: #0d0d0d;
 	width:100%;
 	height:100%;
-	-webkit-text-size-adjust: none;
-   	-moz-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    text-size-adjust: none;
 }
 
 /*LOST PAGE*/
@@ -37,7 +28,6 @@ body{
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
-	background-attachment:fixed;
 }
 .storage-1{
 	width:100%;
@@ -158,8 +148,8 @@ body{
 /*DISAPPEARED CONTENT*/
 .storage-2 .ignored{
 	position:absolute;
-	width:100%;
-	height:100%;
+	width:100vw;
+	height:100vh;
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
@@ -174,7 +164,7 @@ body{
 	position:absolute;
 	justify-self:center;
 	align-self:center;
-	word-spacing:3.10em!important;
+	word-spacing:3.10em;
 	letter-spacing:0.6em;
 	cursor: default;
 }
@@ -222,7 +212,7 @@ body{
 
 .out1, .out2, .out3{
 	animation-name:vanish;
-	animation-duration:1.5s!important;
+	animation-duration:1.5s;
 	animation-timing-function:ease;
 	animation-delay:0.8s;
 	animation-fill-mode:forwards;
@@ -636,13 +626,13 @@ body{
 		background-repeat:no-repeat;
 	}
 	.grid .pic10{
-		background-image:url('https://i.ibb.co/m9jKnjJ/sightsamurai.jpg');
+		background-image:url('https://i.ibb.co/c36mdVZ/shadow.jpg');
 		background-position:center;
 		background-size: contain;
 		background-repeat:no-repeat;
 	}
 	.grid .pic11{
-		background-image:url('https://i.ibb.co/s12wCNz/MERK.jpg');
+		background-image:url('https://i.ibb.co/m9jKnjJ/sightsamurai.jpg');
 		background-position:center;
 		background-size: contain;
 		background-repeat:no-repeat;
@@ -758,7 +748,6 @@ body{
 	opacity:0;
 }
 .outro .sig{
-	margin:0!important;
 	text-transform: uppercase;
 	font-size:1em;
 	font-family:'aldrich', verdana, sans-serif;
@@ -769,7 +758,7 @@ body{
 }
 .outro .social{
 	transition:2s ease;
-	margin:1em 0 0;	
+	margin:1em 0 1em;	
 	opacity:0;
 }
 
@@ -779,7 +768,13 @@ body{
 .social .net-1, .net-2, .net-3{
 	width:40px;
 	height:40px;
+	filter:invert(100%);
+}
+
+.net-1:hover, .net-2:hover, .net-3:hover{
+	transform:scale(1);
 	filter:drop-shadow(0px 0px 5px #000000) invert(100%);
+	transition:1s ease;
 }
 
 /*LANDSCAPE & PORTRAIT DEVICES*/
@@ -891,7 +886,8 @@ body{
 		}
 	}
 	.out2 .out3{
-		top:0.30em;
+		/*top:0.30em;*/
+		top:0;
 		width:150px;
 		height:150px;
 		animation-name:jet;
@@ -997,13 +993,13 @@ body{
 	.outro p{
 		font-size:0.6em;
 	}
-	.outro .sig{
+	.outro h6{
 		font-size:0.4em;
-		margin: 0!important;
+		margin:0;
 	}
 	.social .net-1, .net-2, .net-3{
-		width:23px;
-		height:23px;
+		width:20px;
+		height:20px;
 		filter:drop-shadow(0px 0px 5px #000000) invert(100%);
 	}
 	.outro .social{
@@ -1018,9 +1014,13 @@ body{
 	}
 	.storage-1 h1{
 		font-size:1.8em;
+		-moz-font-size:1.8em;
+		-webkit-font-size:1.8em;
 	}
 	.abox .explore{
 		font-size:0.68em;
+		-moz-font-size:0.68em;
+		-webkit-font-size:0.68em;
 		top:20em;
 	}
 /*ignored mob-2*/
@@ -1098,12 +1098,12 @@ body{
 	.outro p{
 		font-size:0.7em;
 	}
-	.outro .sig{
+	.outro h6{
 		font-size:0.5em;
 	}
 	.social .net-1, .net-2, .net-3{
-		width:27px;
-		height:27px;
+		width:21px;
+		height:21px;
 	}
 
 }
@@ -1117,9 +1117,13 @@ body{
 	}
 	.storage-1 h1{
 		font-size:2em;
+		-moz-font-size:2em;
+		-webkit-font-size:2em;
 	}
 	.abox .explore{
 		font-size:0.75em;
+		-moz-font-size:0.75em;
+		-webkit-font-size:0.75em;
 		top:20em;
 	}
 	/*ignore mob-3*/
@@ -1202,12 +1206,12 @@ body{
 	.outro p{
 		font-size:1em;
 	}
-	.outro .sig{
+	.outro h6{
 		font-size:0.7em;
 	}
 	.social .net-1, .net-2, .net-3{
-		width:35px;
-		height:35px;
+		width:25px;
+		height:25px;
 	}
 
 }
@@ -1288,7 +1292,8 @@ body{
 	.out2 .out3{
 		width:215px;
 		height:215px;
-		top:-0.5em;
+		/*top:-0.5em;*/
+		top:0;
 	}
 	@keyframes jet {
 		from{
@@ -1378,7 +1383,7 @@ body{
 	.outro p{
 		font-size:1.4em;
 	}
-	.outro .sig{
+	.outro h6{
 		font-size:1.2em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -1465,7 +1470,7 @@ body{
 	.outro p{
 		font-size:1.5em;
 	}
-	.outro .sig{
+	.outro h6{
 		font-size:1.3em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -1565,7 +1570,7 @@ body{
 	.outro p{
 		font-size:1.6em;
 	}
-	.outro .sig{
+	.outro h6{
 		font-size:1.4em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -1678,7 +1683,7 @@ body{
 	.outro p{
 		font-size:2.2em;
 	}
-	.outro .sig{
+	.outro h6{
 		font-size:2em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -1888,7 +1893,7 @@ body{
 	.outro p{
 		font-size:0.8em;
 	}
-	.outro .sig{
+	.outro h6{
 		font-size:0.6em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -1977,7 +1982,7 @@ body{
 	.outro p{
 		font-size:0.9em;
 	}
-	.outro .sig{
+	.outro h6{
 		font-size:0.7em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -2226,7 +2231,7 @@ body{
 .outro p{
 	font-size:1.6em;
 }
-.outro .sig{
+.outro h6{
 	font-size:1.3em;
 }
 .social .net-1, .net-2, .net-3{
@@ -2315,7 +2320,7 @@ body{
 	.outro p{
 		font-size:1.8em;
 	}
-	.outro .sig{
+	.outro h6{
 		font-size:1.5em;
 	}
 	.social .net-1, .net-2, .net-3{
@@ -2407,7 +2412,7 @@ body{
 		font-size:1.6em;
 	}
 	.outro .sig{
-		font-size:1.4em;
+		font-size:1.2em;
 	}
 	.social .net-1, .net-2, .net-3{
 		width:45px;
@@ -2561,7 +2566,7 @@ body{
 		.outro p{
 			font-size:2.5em;
 		}
-		.outro .sig{
+		.outro h6{
 			font-size:2.2em;
 		}
 		.social .net-1, .net-2, .net-3{
