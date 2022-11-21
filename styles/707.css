@@ -869,7 +869,7 @@ body{
 	.abox .explore{
 		animation-delay:5s;
 		font-size:0.25;
-		top:20em;
+		/*top:20em;*/
 	}
 	/*ignored mob-1*/
 	.out1{
@@ -1020,7 +1020,7 @@ body{
 		font-size:0.68em;
 		-moz-font-size:0.68em;
 		-webkit-font-size:0.68em;
-		top:20em;
+		top:22em;
 	}
 /*ignored mob-2*/
 	.out2 .out3{
@@ -1123,7 +1123,7 @@ body{
 		font-size:0.75em;
 		-moz-font-size:0.75em;
 		-webkit-font-size:0.75em;
-		top:20em;
+		top:22em;
 	}
 	/*ignore mob-3*/
 	.out2 .out3{
@@ -1264,7 +1264,7 @@ body{
 	}
 	.abox .explore{
 		font-size:1em;
-		top:22em;
+		/*top:20em;*/
 	}
 	/*ipad ignored content*/
 	.ignored .out1{
@@ -1485,7 +1485,7 @@ body{
 		font-size:2.5em;
 	}
 	.abox .explore{
-		top:24em;
+		/*top:24em;*/
 		font-size:1.2em;
 	}
 	/*ipad ignored content*/
@@ -1586,7 +1586,7 @@ body{
 	}
 	.abox .explore{
 		font-size:1.2em;
-		top:28em;
+		/*top:28em;*/
 	}
 	/*ignored content-3*/
 	.ignored .out1{
