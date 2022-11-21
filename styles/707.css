@@ -896,7 +896,7 @@ body{
 	}
 	@keyframes jet {
 		from{
-			top:0.30em;
+			top:-1.5em;
 			opacity:1;
 		}
 		to{
