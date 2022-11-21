@@ -784,7 +784,6 @@ body{
 	.icon07{
 		width:150px;
 		height:150px;
-		top:3em;
 	}
 	.unit-1 .storage-1{
 		padding:0;
@@ -1017,7 +1016,7 @@ body{
 		-moz-font-size:1.8em;
 		-webkit-font-size:1.8em;
 		position: relative;
-		top:-3em;
+		top:-1.5em;
 	}
 	.abox .explore{
 		font-size:0.68em;
@@ -1116,12 +1115,13 @@ body{
 		height:195px;
 		max-width:195px;
 		max-height:195px;
+		top:-1.5em;
 	}
 	.storage-1 h1{
 		font-size:2em;
 		-moz-font-size:2em;
 		-webkit-font-size:2em;
-		top:-3em;
+		top:-1.5em;
 	}
 	.abox .explore{
 		font-size:0.75em;
