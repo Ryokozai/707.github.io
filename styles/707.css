@@ -869,7 +869,7 @@ body{
 	.abox .explore{
 		animation-delay:5s;
 		font-size:0.25;
-		/*top:20em;*/
+		top:25em;
 	}
 	/*ignored mob-1*/
 	.out1{
@@ -1020,7 +1020,7 @@ body{
 		font-size:0.68em;
 		-moz-font-size:0.68em;
 		-webkit-font-size:0.68em;
-		top:22em;
+		top:25em;
 	}
 /*ignored mob-2*/
 	.out2 .out3{
@@ -1123,7 +1123,7 @@ body{
 		font-size:0.75em;
 		-moz-font-size:0.75em;
 		-webkit-font-size:0.75em;
-		top:22em;
+		top:25em;
 	}
 	/*ignore mob-3*/
 	.out2 .out3{
