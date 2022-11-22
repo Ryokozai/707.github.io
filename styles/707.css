@@ -1120,7 +1120,7 @@ body{
 		-moz-font-size:2em;
 		-webkit-font-size:2em;
 		position: relative;
-		top:-0.8em;
+		top:-0.6em;
 	}
 	.abox .explore{
 		font-size:0.75em;
@@ -1132,7 +1132,7 @@ body{
 	.out2 .out3{
 		width:195px;
 		height:195px;
-		top:-1.7em;
+		top:-1.73em;
 	}
 	/*text issue ^ above */
 	.out4 .out5{
