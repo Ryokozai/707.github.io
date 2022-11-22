@@ -784,6 +784,7 @@ body{
 	.icon07{
 		width:150px;
 		height:150px;
+		top:0;
 	}
 	.unit-1 .storage-1{
 		padding:0;
@@ -886,7 +887,7 @@ body{
 	}
 	.out2 .out3{
 		/*top:0.30em;*/
-		top:-2em;
+		top:0;
 		width:150px;
 		height:150px;
 		animation-name:jet;
@@ -896,7 +897,7 @@ body{
 	}
 	@keyframes jet {
 		from{
-			top:-2em;
+			top:0em;
 			opacity:1;
 		}
 		to{
@@ -1113,7 +1114,6 @@ body{
 		height:195px;
 		max-width:195px;
 		max-height:195px;
-		top:-1.5em;
 	}
 	.storage-1 h1{
 		font-size:2em;
@@ -1130,7 +1130,6 @@ body{
 	.out2 .out3{
 		width:195px;
 		height:195px;
-		top:-1.5em;
 	}
 	/*text issue ^ above */
 	.out4 .out5{
@@ -1293,11 +1292,11 @@ body{
 		width:215px;
 		height:215px;
 		/*top:-0.5em;*/
-		top:-2em;
+		top:0;
 	}
 	@keyframes jet {
 		from{
-			top:-0.5em;
+			top:0em;
 			opacity:1;
 		}
 		to{
@@ -1800,10 +1799,11 @@ body{
 		animation-duration:0.9s;
 		animation-timing-function:ease-in;
 		animation-fill-mode: forwards;
+		/*top:0.8em;*/
 	}
 @keyframes jet {
 	from{
-		top:-0.8em;
+		top:0;
 		opacity:1;
 	}
 	to{
