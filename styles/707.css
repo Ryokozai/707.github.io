@@ -785,6 +785,7 @@ body{
 		width:150px;
 		height:150px;
 		top:0;
+		-webkit-top:0;
 	}
 	.unit-1 .storage-1{
 		padding:0;
