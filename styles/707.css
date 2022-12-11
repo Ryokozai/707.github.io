@@ -19,6 +19,7 @@ body{
 .unit-1::-webkit-scrollbar{
 	display:none;	
 	scrollbar-width:none;
+	scroll-behavior:smooth;
 }
 .unit-1{
     background-color:#000000;
@@ -34,13 +35,12 @@ body{
 	height:100%;
 	min-height:100vh;
 	display:flex;
-	flex-direction: column;
 	justify-content: center;
+	align-items:center;
+	text-align:center;
 }
 .storage-1 h1{
 	text-indent:1.25em;
-	text-align:center;
-	align-self: center;
 	color:#ffffff;
 	font-size:2.7em;
 	font-family:'orbitron',verdana,sans-serif;
@@ -70,14 +70,20 @@ body{
 	height:100%;
 	display:flex;
 	justify-content:center;
+	align-items:center;
 	position:absolute;
+	text-align:center;
+}
+.icon07{
+	width:235px;
+	height:235px;
+	position:relative;
 	animation-name:fadeup;
 	animation-duration:2.2s;
 	animation-delay:0.3s;
 	animation-timing-function:ease;
 	animation-fill-mode: forwards;
 	opacity:0;
-	top:0;
 }
 @keyframes fadeup {
 	from{
@@ -87,38 +93,25 @@ body{
 
 	to{
 		opacity:100%;
-		top:0em;
+		top:-2em;
 	}
-}
-.icon07{
-	width:300px;
-	height:300px;
-	align-self: center;
-	position: relative;
-	top:-0.8em;
 }
 .storage-1 .abox{
 	width:100%;
 	height:100%;
 	display:flex;
 	justify-content:center;
+	text-align:center;
+	align-items:center;
 	position:absolute;
-	transition: 0.5s;
-	animation-name:textfade;
-	animation-duration:2s;
-	animation-timing-function:ease;
-	animation-fill-mode: forwards;
-	animation-delay:3s;
-	opacity:0;
 }
-.abox .explore{
+.explore{
 	font-size:0.5em;
 	font-family:'orbitron', verdana;
 	font-weight: bold;
 	padding:7px;
 	position: relative;
-	top:7.7em;
-	align-self: center;
+	top:30em;
 	letter-spacing:0.5px;
 	text-transform: uppercase;
 	transition: 0.5s;
@@ -132,10 +125,10 @@ body{
 }
 @keyframes textfade {
 	from{
-		opacity:0%;
+		opacity:0;
 	}
 	to{
-		opacity:100%;
+		opacity:1;
 	}	
 }
 .explore:hover{
@@ -152,7 +145,6 @@ body{
 	width:100vw;
 	height:100vh;
 	display:flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -178,14 +170,16 @@ body{
 	cursor:default;
 }
 .out3{
-	width:300px;
-	height:300px;
+	width:235px;
+	height:235px;
 	cursor:default;
 	align-self: center;
 	position: relative;
-	top:-0.8em;
+	top:0em;
 }
 .out4{
+	width:100%;
+	height:100%;
 	display:flex;
 	justify-content:center;
 	position:absolute;
@@ -390,7 +384,7 @@ body{
 	}
 
 	/*RYO CONTENT*/
-	.unit-2 .content{
+	.content{
 		width:100%;
 		min-height:100%;
 		display:flex;
@@ -782,13 +776,28 @@ body{
 
 /*media querey*/
 @media (orientation:portrait) and (min-width:315px) {
+	.unit-1::-webkit-scrollbar{
+		overflow-x:hidden;
+	}
 	.icon07{
 		width:150px;
 		height:150px;
 		top:0;
 		-webkit-top:0;
+		animation-duration:2s;
+		animation-delay:3s;
 	}
-	.unit-1 .storage-1{
+	@keyframes fadeup {
+		from{
+			opacity:0;
+			top:3em;
+		}
+		to{
+			opacity:1;
+			top:0;
+		}
+	}
+	.storage-1{
 		padding:0;
 	}
 	.storage-1 .cubic{
@@ -858,25 +867,10 @@ body{
 			left:0em;
 		}
 	}
-	.storage-1 .cubic{
-		animation-duration:2s;
-		animation-delay:3s;
-	}
-	@keyframes fadeup {
-		from{
-			opacity:0;
-			top:3em;
-		}
-		to{
-			opacity:1;
-			top:0;
-		}
-		
-	}
-	.abox .explore{
+	.explore{
 		animation-delay:5s;
 		font-size:0.25;
-		/*top:25em;*/
+		top:25em;
 	}
 	/*ignored mob-1*/
 	.out1{
@@ -891,9 +885,9 @@ body{
 			opacity:0;
 		}
 	}
-	.out2 .out3{
+	.out3{
 		/*top:0.30em;*/
-		top:0;
+		top:0em;
 		width:150px;
 		height:150px;
 		animation-name:jet;
@@ -914,7 +908,7 @@ body{
 	.out4{
 		animation-delay:0.1s;
 	}
-	.out4 .out5{
+	.out5{
 		font-size:0.25;
 		top:25em;
 	}
@@ -1023,18 +1017,18 @@ body{
 		-moz-font-size:1.8em;
 		-webkit-font-size:1.8em;
 	}
-	.abox .explore{
+	.explore{
 		font-size:0.68em;
 		-moz-font-size:0.68em;
 		-webkit-font-size:0.68em;
-		/*top:25em;*/
+		top:25em;
 	}
 /*ignored mob-2*/
-	.out2 .out3{
+	.out3{
 		width:175px;
 		height:175px;
 	}
-	.out4 .out5{
+	.out5{
 		font-size:0.68em;
 		top:25em;
 	}
@@ -1118,8 +1112,6 @@ body{
 	.icon07{
 		width:195px;
 		height:195px;
-		max-width:195px;
-		max-height:195px;
 	}
 	.storage-1 h1{
 		font-size:2em;
@@ -1128,30 +1120,30 @@ body{
 		position: relative;
 		top:-0.6em;
 	}
-	.abox .explore{
+	.explore{
 		font-size:0.75em;
 		-moz-font-size:0.75em;
 		-webkit-font-size:0.75em;
 		top:25em;
 	}
 	/*ignore mob-3*/
-	.out2 .out3{
+	.out3{
 		width:195px;
 		height:195px;
-		top:-1.73em;
+		top:0em;
 	}
 	@keyframes jet {
 		from{
-			top:-1.73em;
+			top:0em;
 			opacity:1;
 		}
 		to{
-			top:-2.8em;
+			top:-1.7em;
 			opacity:0;
 		}
 	}
 	/*text issue ^ above */
-	.out4 .out5{
+	.out5{
 		font-size:0.75em;
 		top:25em;
 	}
@@ -1238,11 +1230,24 @@ body{
 	.icon07{
 		width:215px;
 		height:215px;
+		top:0em;
+	}
+	@keyframes fadeup {
+		from{
+			opacity:0;
+			top:1.7em;
+		}
+		to{
+			opacity:1;
+			top:-0.35em;
+		}
 	}
 	.storage-1 h1{
 		margin-top:0;
-		font-size:1.9em;
+		font-size:2em;
 		text-indent:0;
+		width:100%;
+		top:0em;
 	}
 	.onez{
 		position: relative;
@@ -1255,11 +1260,11 @@ body{
 	}
 	@keyframes lefty {
 	0%{
-		left:-3em;
+		left:-2.7em;
 		opacity:0;
 	}
 	100%{
-		left:-1.5em;
+		left:-1.39em;
 		opacity:1;
 	}
 	}
@@ -1275,22 +1280,21 @@ body{
 	@keyframes righty {
 		0%{
 			opacity:0;
-			right:-3em;
+			right:-3.8em;
 		}
 		100%{
-			opacity:1.5;
-			right:-1.5em;
+			opacity:1;
+			right:-2.62em;
 		}
 	}
-	.abox .explore{
+	.explore{
 		font-size:1em;
-		/*top:20em;*/
+		top:22em;
 	}
 	/*ipad ignored content*/
 	.ignored .out1{
 		opacity:1;
-		font-size:1.9em;
-		word-spacing:3.35em!important;
+		font-size:2em;
 		animation-name:vanishing;
 		animation-duration:1s;
 		animation-timing-function:ease;
@@ -1300,30 +1304,68 @@ body{
 	@keyframes vanishing{
 		from{
 			opacity:1;
-			word-spacing:3.5em;
 		}
 		to{
 			opacity:0;
-			word-spacing:5em;
 		}
 	}
-	.out2 .out3{
+	.outl{
+		position: relative;
+		animation-name:oleft;
+		animation-duration:3s;
+		animation-timing-function:ease;
+		animation-fill-mode:forwards;
+		animation-delay:700ms;
+		left:0;
+		opacity:1;
+	}
+	@keyframes oleft {
+	0%{
+		left:0;
+		opacity:1;
+	}
+	100%{
+		left:-1em;
+		opacity:0;
+	}
+	}
+	.outr{
+		position: relative;
+		animation-name:oright;
+		animation-duration:3s;
+		animation-timing-function:ease;
+		animation-fill-mode:forwards;
+		animation-delay:700ms;
+		right:0;
+		opacity:1;
+	}
+	@keyframes oright {
+	0%{
+		right:0;
+		opacity:1;
+	}
+	100%{
+		right:-1em;
+		opacity:0;
+	}
+	}
+	.out3{
 		width:215px;
 		height:215px;
 		/*top:-0.5em;*/
-		top:0;
+		top:-0.35em;
 	}
 	@keyframes jet {
 		from{
-			top:0em;
+			top:-0.35em;
 			opacity:1;
 		}
 		to{
-			top:-3.5em;
+			top:-2em;
 			opacity:0;
 		}
 	}
-	.out4 .out5{
+	.out5{
 		font-size:1em;
 		top:22em;
 	}
@@ -1417,7 +1459,7 @@ body{
 	.storage-1 h1{
 		font-size:2em;
 	}
-	.abox .explore{
+	.explore{
 		font-size:1.05em;
 	}
 	/*ipad ignored content*/
@@ -1425,12 +1467,13 @@ body{
 		opacity:1;
 		font-size:2em;
 	}
-	.out2 .out3{
+	.out3{
 		width:235px;
 		height:235px;
 	}
-	.out4 .out5{
+	.out5{
 		font-size:1.05em;
+		top:25em;
 	}
 	/*ignored aboved*/
 	/*visionary*/
@@ -1504,7 +1547,7 @@ body{
 	.storage-1 h1{
 		font-size:2.5em;
 	}
-	.abox .explore{
+	.explore{
 		/*top:24em;*/
 		font-size:1.2em;
 	}
@@ -1512,11 +1555,11 @@ body{
 	.ignored .out1{
 		font-size:2.5em;
 	}
-	.out2 .out3{
+	.out3{
 		width:285px;
 		height:285px;
 	}
-	.out4 .out5{
+	.out5{
 		font-size:1.2em;
 		top:24em;
 	}
@@ -1604,7 +1647,7 @@ body{
 	.storage-1 h1{
 		font-size:2.7em;
 	}
-	.abox .explore{
+	.explore{
 		font-size:1.2em;
 		/*top:28em;*/
 	}
@@ -1624,11 +1667,11 @@ body{
 			word-spacing:5.5em;
 		}
 	}
-	.out2 .out3{
+	.out3{
 		width:300px;
 		height:300px;
 	}
-	.out4 .out5{
+	.out5{
 		font-size:1.2em;
 		top:28em;
 	}
@@ -1713,11 +1756,7 @@ body{
 /*LANDSCAPE*/
 
 @media (orientation:landscape) and (min-width:480px){
-	.icon07{
-		width:140px;
-		height:140px;
-	}
-	.unit-1 .storage-1{
+	.storage-1{
 		padding:0;
 	}
 	.storage-1 h1{
@@ -1779,7 +1818,9 @@ body{
 			left:0.5em;
 		}
 	}
-	.storage-1 .cubic{
+	.icon07{
+		width:125px;
+		height:125px;
 		animation-duration:2s;
 		animation-delay:3s;
 	}
@@ -1793,10 +1834,10 @@ body{
 			top:0;
 		}
 	}
-	.abox .explore{
+	.explore{
 		animation-delay:5s;
-		font-size:0.1em;
-		top:12.5em;
+		font-size:8px;
+		top:15.5em;
 	}
 	/*ignored-1*/
 	.out1{
@@ -1811,9 +1852,9 @@ body{
 		opacity:0;
 	}
 }
-	.out2 .out3{
-		width:140px;
-		height:140px;
+	.out3{
+		width:125px;
+		height:125px;
 		animation-name:jet;
 		animation-duration:0.9s;
 		animation-timing-function:ease-in;
@@ -1834,8 +1875,8 @@ body{
 		animation-delay:0.1s;
 	}
 	.out5{
-		top:12.5em;
-		font-size:0.1em;
+		font-size:8px;
+		top:15.5em;
 	}
 	/*ignored content above*/
 
@@ -1929,18 +1970,18 @@ body{
 	.storage-1 h1{
 		font-size:1.3em;
 	}
-	.abox .explore{
+	.explore{
 		top:15em;
 	}
 	/*ignored content-2*/
 	.ignored .out1{
 		font-size:1.3em;
 	}
-	.out2 .out3{
+	.out3{
 		width:150px;
 		height:150px;
 	}
-	.out4 .out5{
+	.out5{
 		top:15em;
 	}
 	/*ignored above-2*/
@@ -2018,19 +2059,19 @@ body{
 	.storage-1 h1{
 		font-size:1.4em;
 	}
-	.abox .explore{
-		top:16em;
+	.explore{
+		top:18em;
 	}
 	/*ignored content-3*/
 	.ignored .out1{
 		font-size:1.4em;
 	}
-	.out2 .out3{
+	.out3{
 		width:160px;
 		height:160px;
 	}
-	.out4 .out5{
-		top:16em;
+	.out5{
+		top:18em;
 	}
 	/*ignored above-3*/
 	/*UNDETECTED MOB-3*/
@@ -2132,20 +2173,21 @@ body{
 			right:-2em;
 		}
 	}
-	.storage-1 .cubic{
+	.icon07{
 		animation-delay:2.5s;
+		animation-duration:2.5s;
 	}
 	@keyframes fadeup {
 		from{
 			opacity:0;
-			top:3em;
+			top:2em;
 		}
 		to{
 			opacity:1;
 			top:0;
 		}
 	}
-	.abox .explore{
+	.explore{
 		font-size:0.9em;
 		top:17em;
 		animation-delay:4.5s;
@@ -2154,7 +2196,6 @@ body{
 	.ignored .out1{
 		opacity:1;
 		font-size:2em;
-		word-spacing:3.10em!important;
 		animation-name:vanishing;
 	}
 	@keyframes vanishing{
@@ -2167,14 +2208,14 @@ body{
 			word-spacing:4em;
 		}
 	}
-	.out2 .out3{
+	.out3{
 		width:225px;
 		height:225px;
 	}
 .out4{
 	animation-delay:0.2s;
 }
-.out4 .out5{
+.out5{
 	font-size:0.9em;
 	top:17em;
 }
@@ -2261,24 +2302,24 @@ body{
 @media (orientation:landscape) and (min-width:1100px){
 	/*intro*/
 	.icon07{
-		width:240px;
-		height:240px;
+		width:230px;
+		height:230px;
 	}
 	.storage-1 h1{
 		font-size:2.2em;
 	}
-	.abox .explore{
+	.explore{
 		font-size:1.1em;
 	}
 	/*ignored content*/
 	.ignored .out1{
 		font-size:2.2em;
 	}
-	.out2 .out3{
-		width:240px;
-		height:240px;
+	.out3{
+		width:230px;
+		height:230px;
 	}
-	.out4 .out5{
+	.out5{
 		font-size:1.1em;
 	}
 	/*ignored above*/
@@ -2350,26 +2391,60 @@ body{
 @media (orientation:landscape) and (min-width:1200px){
 	/*intro*/
 	.icon07{
-		width:240px;
-		height:240px;
+		width:235px;
+		height:235px;
+		animation-delay:0.3s;
+	}
+	@keyframes fadeup {
+		from{
+			opacity:0%;
+			top:2em;
+		}
+	
+		to{
+			opacity:100%;
+			top:-0.8em;
+		}
 	}
 	.storage-1 h1{
 		font-size:2.2em;
 	}
-	.abox .explore{
+	.explore{
 		font-size:0.5em;
-		top:25em;
+		top:30em;
 	}
 	/*ignored*/
 	.ignored .out1{
 		font-size:2.2em;
+		letter-spacing:0.6em;
 	}
-	.out2 .out3{
-		width:240px;
-		height:240px;
+	/*@keyframes vanishing{
+		from{
+			opacity:1;
+			word-spacing:3.12em;
+		}
+		to{
+			opacity:0;
+			word-spacing:4em;
+		}
+	}*/
+	.out3{
+		width:235px;
+		height:235px;
+		top:-0.8em;
 	}
-	.out4 .out5{
-		top:25em;
+@keyframes jet {
+	from{
+		top:-0.8em;
+		opacity:1;
+	}
+	to{
+		top:-2.2em;
+		opacity:0;
+	}
+}
+	.out5{
+		top:30em;
 		font-size:0.5em;
 	}
 	/*ignored above*/
@@ -2438,7 +2513,7 @@ body{
 		height:45px;
 	}
 }
-@media (orientation:landscape) and (min-width:1300px){
+@media (orientation:landscape) and (min-width:1300px){/*DESKTOP RESET?*/
 		/*lost page ipad LS*/
 		.icon07{
 			width:250px;
@@ -2447,7 +2522,7 @@ body{
 		.storage-1 h1{
 			font-size:2.3em;
 		}
-		.abox .explore{
+		.explore{
 			font-size:0.6em;
 			top:28em;
 		}
@@ -2455,14 +2530,11 @@ body{
 		.ignored .out1{
 			font-size:2.3em;
 		}
-		.out2 .out3{
+		.out3{
 			width:250px;
 			height:250px;
 		}
-		.out4 .out5{
-			font-size:0.6em;
-			top:28em;
-		}
+		
 	/*ignored content above*/
 	/*undetected LS pad*/
 		.box .pfp{
@@ -2496,7 +2568,7 @@ body{
 @media (orientation:landscape) and (min-width:1350px){
 	/*fixing mobile screening*/ 
 }
-@media (orientation:landscape) and (min-width:1900px){
+@media (orientation:landscape) and (min-width:1900px){/*4K DESKTOP WIDE SCREEN*/
 		/*lost page ipad LS*/
 		.icon07{
 			width:385px;
@@ -2505,7 +2577,7 @@ body{
 		.storage-1 h1{
 			font-size:3.5em;
 		}
-		.abox .explore{
+		.explore{
 			top:22em;
 			font-size:1.2em;
 		}
@@ -2513,11 +2585,11 @@ body{
 		.ignored .out1{
 			font-size:3.5em;
 		}
-		.out2 .out3{
+		.out3{
 			width:385px;
 			height:385px;
 		}
-		.out4 .out5{
+		.out5{
 			font-size:1.2em;
 			top:22em;
 		}
