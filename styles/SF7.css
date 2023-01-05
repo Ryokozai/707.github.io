@@ -153,27 +153,27 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 }
 
 @media (orientation:portrait) and (min-width:370px) {
-	.icon07, .logo07{width:175px;height:175px;}
+	.icon07{width:175px;height:175px;}
 		
-	.explore, .unexplore{font-size:0.65em;}
+	.explore{font-size:0.65em;}
 
 	.intro-1 h3{font-size:1.8em;}
 	
 }
 
 @media (orientation:portrait) and (min-width:400px) {    
-	.icon07, .logo07{width:200px;height:200px;}
+	.icon07{width:200px;height:200px;}
 
-	.explore, .unexplore{font-size:0.70em;}
+	.explore{font-size:0.70em;}
 
 	.intro-1 h3{font-size:2em;}
 }           
 
 /*IPAD*/
 @media (orientation:portrait) and (min-width:600px){
-	.icon07, .logo07{width:315px;height:315px;}
+	.icon07{width:315px;height:315px;}
 
-	.explore, .unexplore{font-size:1em;top:27em;}
+	.explore{font-size:1em;top:27em;}
 	
 	.intro-1 h3{font-size:3em;}
 
@@ -187,9 +187,9 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 }
 
 @media (orientation:portrait) and (min-width:1020px){
-	.icon07, .logo07{width:400px;height:400px;}
+	.icon07{width:400px;height:400px;}
 
-	.explore, .unexplore{font-size:1.5em;top:23em;}
+	.explore{font-size:1.5em;top:23em;}
 	
 	.intro-1 h3{font-size:4em;}	
 }
@@ -248,17 +248,17 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 	/*MAIN INTRO PAGE*/
 	.intro-1 h3{font-size:1.6em;}
 
-	.icon07, .logo07{width:155px;height:155px;}
+	.icon07{width:155px;height:155px;}
 
-	.explore, .unexplore{top:18em;}
+	.explore{top:18em;}
 }
 @media (orientation:landscape) and (min-width:700px){
 	/*MAIN INTRO PAGE*/
 	.intro-1 h3{font-size:1.8em;}
 
-	.icon07, .logo07{width:175px;height:175px;}
+	.icon07{width:175px;height:175px;}
 
-	.explore, .unexplore{top:20em;}
+	.explore{top:20em;}
 }
 /*IPAD*/
 @media (orientation:landscape) and (min-width:900px){
@@ -275,32 +275,32 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 }
 @media (orientation:landscape) and (min-width:1100px){
 	/*INTRO*/
-	.icon07, .logo07{width:275px;height:275px;}
+	.icon07{width:275px;height:275px;}
 
 	.intro-1 h1{font-size:2.5em;}
 
-	.explore, .unexplore{font-size:1em;top:20em;}
+	.explore{font-size:1em;top:20em;}
 }
 @media (orientation:landscape) and (min-width:1200px){/*OTHER DESKTOPS & MY SCREEN*/
 	/*INTRO*/
-	.icon07, .logo07{width:235px;height:235px;}
+	.icon07{width:235px;height:235px;}
 
 	.intro-1 h1{font-size:2.3em;}
 
-	.explore, .unexplore{font-size:0.7em;top:27em;}
+	.explore{font-size:0.7em;top:27em;}
 }
 @media (orientation:landscape) and (min-width:1300px){/*DESKTOP RESET?*/
 	/*INTRO*/
-	.icon07, .logo07{width:250px;height:250px;}
+	.icon07{width:250px;height:250px;}
 
 	.intro-1 h1{font-size:2.5em;}
 }
 @media (orientation:landscape) and (min-width:1900px){/*4K DESKTOP WIDE SCREEN*/
 	/*INTRO*/
-	.icon07, .logo07{width:400px;height:400px;}
+	.icon07{width:400px;height:400px;}
 
 	.intro-1 h1{font-size:4em;}
 
-	.explore, .unexplore{font-size:1.5em;top:20em;}
+	.explore{font-size:1.5em;top:20em;}
 }
 
