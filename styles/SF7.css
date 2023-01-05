@@ -1,0 +1,306 @@
+/*styles*/
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*{box-sizing: border-box;margin:0;padding:0;
+	text-decoration: none;list-style: none;
+	scroll-behavior:smooth;}
+
+body{background-color: #0d0d0d;width:100%;height:100%;}
+
+/*LOST PAGE*/
+.unit-1::-moz-scrollbar{display:none;scrollbar-width:none;
+	scroll-behavior:smooth;}
+
+.unit-1::-webkit-scrollbar{display:none;scrollbar-width:none;
+	scroll-behavior:smooth;}
+
+.unit-1{
+    background-color:#000000;
+    height:100%;
+    width:100%;
+	background-image:url('https://i.ibb.co/R4MHNFJ/SFBG.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+.intro-1{
+	width:100%;
+	height:100%;
+	min-height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+}
+.intro-1 h3{display:none;}
+
+.intro-1 h1{
+	text-indent:1.25em;
+	text-align:center;
+	color:#ffffff;
+	font-size:2.2em;
+	font-family:'orbitron',verdana,sans-serif;
+	word-spacing:5em;
+	opacity:0;
+	letter-spacing:0.6em;
+	animation: textin 2.4s ease 0.2s forwards;
+}
+@keyframes textin {
+	from{opacity:0%;word-spacing:5em;}
+	to{word-spacing:3em;opacity:100%;}
+}
+.intro-1 .cubic{
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:absolute;
+	text-align:center;
+}
+.icon07{
+	width:235px;
+	height:235px;
+	position:relative;
+	animation: fadeup 2.2s ease 0.3s forwards;
+	opacity:0;
+}
+@keyframes fadeup {
+	from{opacity:0%; top:3em;}
+	to{opacity:100%;top:-0.5em;}
+}
+.intro-1 .abox{
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	text-align:center;
+	align-items:center;
+	position:absolute;
+}
+.explore{
+	font-size:0.5em;
+	font-family:'orbitron', verdana;
+	font-weight: bold;
+	padding:7px;
+	position: relative;
+	top:30em;
+	letter-spacing:0.5px;
+	text-transform: uppercase;
+	transition: 0.5s;
+	color:#ffffff;
+	animation: textfade 2s ease 3s forwards;
+	opacity:0;
+}
+@keyframes textfade {
+	from{opacity:0;}
+	to{opacity:1;}	
+}
+.explore:hover{
+	transition: 0.5s;
+	text-shadow:0px 0px 1.5px #fafdef;
+	cursor: pointer;
+}
+
+@media (orientation:portrait) and (min-width:315px) {
+	.unit-1::-webkit-scrollbar{overflow-x:hidden;}
+
+	.intro-1 h1{display:none;}
+	
+	.intro-1 h3{
+		text-align: center;
+		letter-spacing:0;
+		display:flex;
+		flex-direction: column;
+		color:#ffffff;
+		font-size:1.5em;
+		font-family:'orbitron',verdana,sans-serif;
+	}
+	h3 .word1{
+		animation: righty 3s ease 700ms forwards;
+		position: relative;
+		letter-spacing:1.5px;
+		opacity:0;
+	}
+	@keyframes righty {
+		0%{opacity:0;right:3em;}
+		50%{opacity:1;right:0em;}
+		100%{opacity:0;right:0em;}
+	}
+	.word2{
+		animation: lefty 3s ease 700ms forwards;
+		position: relative;
+		letter-spacing:0;
+		opacity:0;
+	}
+	@keyframes lefty{
+		0%{opacity:0;left:3em;}
+		50%{opacity:1;left:0em;}
+		100%{opacity:0;left:0em;}
+	}
+	.icon07{
+		width:150px;
+		height:150px;
+		top:0;
+		animation-duration:2s;
+		animation-delay:3.3s;
+	}
+	@keyframes fadeup {
+		from{opacity:0;top:2em;}
+		to{opacity:1;top:0em;}
+	}
+	.explore{animation-delay:5s;font-size:0.25em;top:25em;}		
+}
+
+@media (orientation:portrait) and (min-width:370px) {
+	.icon07, .logo07{width:175px;height:175px;}
+		
+	.explore, .unexplore{font-size:0.65em;}
+
+	.intro-1 h3{font-size:1.8em;}
+	
+}
+
+@media (orientation:portrait) and (min-width:400px) {    
+	.icon07, .logo07{width:200px;height:200px;}
+
+	.explore, .unexplore{font-size:0.70em;}
+
+	.intro-1 h3{font-size:2em;}
+}           
+
+/*IPAD*/
+@media (orientation:portrait) and (min-width:600px){
+	.icon07, .logo07{width:315px;height:315px;}
+
+	.explore, .unexplore{font-size:1em;top:27em;}
+	
+	.intro-1 h3{font-size:3em;}
+
+	.screen-1 .he2{display:none;}
+
+	@keyframes righty {
+		0%{opacity:0;right:3em;}
+		50%{opacity:1;right:0.06em;}
+		100%{opacity:0;right:0.06em;}
+	}
+}
+
+@media (orientation:portrait) and (min-width:1020px){
+	.icon07, .logo07{width:400px;height:400px;}
+
+	.explore, .unexplore{font-size:1.5em;top:23em;}
+	
+	.intro-1 h3{font-size:4em;}	
+}
+
+/*LANDSCAPE MEDIA QUEREY*/
+@media (orientation:landscape) and (min-width:480px){
+	.unit-1::-webkit-scrollbar{overflow-x:hidden;}
+
+	.intro-1 h1{display:none;}
+	
+	.intro-1 h3{
+		text-align: center;
+		letter-spacing:0;
+		display:flex;
+		flex-direction: column;
+		color:#ffffff;
+		font-size:1.3em;
+		font-family:'orbitron',verdana,sans-serif;
+	}
+	h3 .word1{
+		animation: righty 3s ease 700ms forwards;
+		position: relative;
+		letter-spacing:1.5px;
+		opacity:0;
+	}
+	@keyframes righty {
+		0%{opacity:0;right:3em;}
+		50%{opacity:1;right:0em;}
+		100%{opacity:0;right:0em;}
+	}
+	.word2{
+		animation: lefty 3s ease 700ms forwards;
+		position: relative;
+		letter-spacing:0;
+		opacity:0;
+	}
+	@keyframes lefty{
+		0%{opacity:0;left:3em;}
+		50%{opacity:1;left:0em;}
+		100%{opacity:0;left:0em;}
+	}
+	.icon07{
+		width:135px;
+		height:135px;
+		top:0;
+		animation-duration:2s;
+		animation-delay:3.3s;
+	}
+	@keyframes fadeup {
+		from{opacity:0;top:2em;}
+		to{opacity:1;top:0em;}
+	}
+	.explore{animation-delay:5s;font-size:8px;top:15em;}
+}
+@media (orientation:landscape) and (min-width:650px){
+	/*MAIN INTRO PAGE*/
+	.intro-1 h3{font-size:1.6em;}
+
+	.icon07, .logo07{width:155px;height:155px;}
+
+	.explore, .unexplore{top:18em;}
+}
+@media (orientation:landscape) and (min-width:700px){
+	/*MAIN INTRO PAGE*/
+	.intro-1 h3{font-size:1.8em;}
+
+	.icon07, .logo07{width:175px;height:175px;}
+
+	.explore, .unexplore{top:20em;}
+}
+/*IPAD*/
+@media (orientation:landscape) and (min-width:900px){
+	/*INTRO*/
+	.unit-1::-webkit-scrollbar{overflow-x:hidden;}
+
+	.intro-1 h1{display:flex;}
+	
+	.intro-1 h3{display:none;}
+
+	.icon07{width:250px;height:250px;animation-delay:2s;}
+
+	.explore{animation-delay:4s;font-size:0.85em;top:23em;}
+}
+@media (orientation:landscape) and (min-width:1100px){
+	/*INTRO*/
+	.icon07, .logo07{width:275px;height:275px;}
+
+	.intro-1 h1{font-size:2.5em;}
+
+	.explore, .unexplore{font-size:1em;top:20em;}
+}
+@media (orientation:landscape) and (min-width:1200px){/*OTHER DESKTOPS & MY SCREEN*/
+	/*INTRO*/
+	.icon07, .logo07{width:235px;height:235px;}
+
+	.intro-1 h1{font-size:2.3em;}
+
+	.explore, .unexplore{font-size:0.7em;top:27em;}
+}
+@media (orientation:landscape) and (min-width:1300px){/*DESKTOP RESET?*/
+	/*INTRO*/
+	.icon07, .logo07{width:250px;height:250px;}
+
+	.intro-1 h1{font-size:2.5em;}
+}
+@media (orientation:landscape) and (min-width:1900px){/*4K DESKTOP WIDE SCREEN*/
+	/*INTRO*/
+	.icon07, .logo07{width:400px;height:400px;}
+
+	.intro-1 h1{font-size:4em;}
+
+	.explore, .unexplore{font-size:1.5em;top:20em;}
+}
+
