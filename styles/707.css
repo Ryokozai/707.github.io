@@ -578,6 +578,8 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 }
 
 @media (orientation:portrait) and (min-width:370px) {
+	.logo07{width:175px; height:175px;}
+	.unexplore{font-size:0.65em;}
 	/*2nd-intro page*/
 	.ryo07{width:160px;height:160px;}
 		
@@ -611,6 +613,8 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 }
 
 @media (orientation:portrait) and (min-width:400px) {
+	.logo07{width:200px;height:200px;}
+	.unexplore{font-size:0.70em;}
 	/*2nd page*/
 	.ryo07{width:185px;height:185px;}
 
@@ -645,6 +649,8 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 
 /*IPAD*/
 @media (orientation:portrait) and (min-width:600px){
+	.logo07{width:315px;height:315px;}
+	.unexplore{font-size:1em;top:27em;}
 	/*2nd page*/
 	.ryo07{width:250px;height:250px;border-radius:500px;}
 
@@ -690,7 +696,8 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 }
 	
 @media (orientation:portrait) and (min-width:1020px){
-
+.logo07{width:400px;height:400px;}
+	.unexplore{font-size:1.5em; top:23em;}
 /*2nd page*/
 	.ryo07{width:355px;height:355px;border-radius:700px;}
 
@@ -793,6 +800,8 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 }	
 
 @media (orientation:landscape) and (min-width:650px){
+	.logo07{width:155px;height:155px;}
+	.unexplore{top:18em;}
 	/*EXTRA CODE PAGE*/	
 	.ryo07{width:155px;height:155px;}
 		
@@ -833,6 +842,8 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 }
 
 @media (orientation:landscape) and (min-width:700px){
+	.logo07{width:175px;height:175px;}
+	.unexplore{top:20em;}
 	/*EXTRA CODE PAGE*/	
 	.ryo07{width:165px;height:165px;}
 		
@@ -856,6 +867,8 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 }
 /*IPAD*/
 @media (orientation:landscape) and (min-width:900px){
+	.logo07{width:250px;height:250px;}
+	.unexplore{font-size:0.85em;top:23em;animation-delay:1s;}
 /*EXTRA CODE PAGE*/	
 	.unit-2::-webkit-scrollbar{overflow-x:hidden;}
 		
@@ -911,6 +924,8 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 	.social .net-2{margin:0 1.5em;}
 }
 @media (orientation:landscape) and (min-width:1100px){
+	.logo07{width:275px;height:275px;}
+	.unexplore{font-size:1em; top:20em;}
 	/*EXTRA CODE PAGE*/	
 	.screen-1 .he2{font-size:2.5em;}
 		
@@ -950,6 +965,8 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 	.social .net-1, .net-2, .net-3{width:60px;height:60px;}	
 }
 @media (orientation:landscape) and (min-width:1200px){/*OTHER DESKTOPS & MY SCREEN*/
+	.logo07{width:235px;height:235px;}
+	.unexplore{font-size:0.7em; top:27em;}
 	/*EXTRA CODE PAGE*/	
 	.screen-1 .he2{font-size:2.3em;}
 			
@@ -994,6 +1011,7 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 }
 
 @media (orientation:landscape) and (min-width:1300px){/*DESKTOP RESET?*/
+	.logo07{width:250px;height:250px;}
 	/*EXTRA CODE PAGE*/	
 	.screen-1 .he2{font-size:2.5em;}
 			
@@ -1009,6 +1027,8 @@ body{background-color: #0d0d0d;width:100%;height:100%;}
 
 }
 @media (orientation:landscape) and (min-width:1900px){/*4K DESKTOP WIDE SCREEN*/
+	.logo07{width:400px;height:400px;}
+	.unexplore{font-size:1.5em; top:20em;}
 	/*EXTRA CODE PAGE*/	
 	.screen-1 .he2{font-size:4em;}
 		
